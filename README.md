@@ -12,7 +12,7 @@ I'm just beginner and right just a little pseudo-code, if you want more specific
 
 ----------
 
-## Insertion sort
+## Insertion sort(삽입정렬)
 ```
 for j = 2 to A.length
     key = A[j]
@@ -25,7 +25,7 @@ for j = 2 to A.length
 ```
 
 
-## Merge sort
+## Merge sort(병합정렬)
 
 The divide-and-conquer paradigm involves three steps at each level of the recursion:
 
@@ -59,3 +59,6 @@ for k = p to r
         i = i + 1
     else A[k] = R[j]
         j = j + 1
+
+
+__최대 부분 배열__
