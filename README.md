@@ -29,6 +29,6 @@ for j = 2 to A.length
 
 The divide-and-conquer paradigm involves three steps at each level of the recursion:
 
-__Divide__ the problem into a number of subprolems that are smaller instances of the same problem
+__Divide__ the problem into a number of subprolems that are smaller instances of the same problem</br>
 __Conquer__ the subproblems by solving them recursively. If the subproblem sizes are small enough, however, just solve the subproblems in a straightforward manner.
 __Combine__ the solutions to the subproblems into the solution for the original problem.
