@@ -13,8 +13,8 @@ I'm just beginner and right just a little pseudo-code, if you want more specific
 ----------
 
 ## Insertion sort
->
->`for j = 2 to A.length`
+'''python
+`for j = 2 to A.length`
     `key = A[j]`
      // Insert `A[j]` in to the sorted sequence `A[1...j-1]`
      `i = j-1`
@@ -22,3 +22,4 @@ I'm just beginner and right just a little pseudo-code, if you want more specific
          `A[i+1] = A[i]`
          `i = i - 1`
      `A[i+1] = key`
+'''
