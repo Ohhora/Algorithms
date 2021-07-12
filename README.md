@@ -59,6 +59,6 @@ for k = p to r
         i = i + 1
     else A[k] = R[j]
         j = j + 1
-
+'''
 
 __최대 부분 배열__
