@@ -29,6 +29,13 @@ for j = 2 to A.length
 
 The divide-and-conquer paradigm involves three steps at each level of the recursion:
 
-__Divide__ the problem into a number of subprolems that are smaller instances of the same problem</br>
-__Conquer__ the subproblems by solving them recursively. If the subproblem sizes are small enough, however, just solve the subproblems in a straightforward manner.
-__Combine__ the solutions to the subproblems into the solution for the original problem.
+__Divide__ the problem into a number of subprolems that are smaller instances of the same problem.</br>
+__Conquer__ the subproblems by solving them recursively. If the subproblem sizes are small enough, however, just solve the subproblems in a straightforward manner.</br>
+__Combine__ the solutions to the subproblems into the solution for the original problem.</br>
+
+
+The *merge sort* algorithm closely follows the divide-and-conquer paradigm. Intuitively, it operates as follows
+
+__Divide__ : Divide the *n*-element sequence to be sorted into two subsequences of n/2 elements each.</br>
+__Conquer__ : Sort the two subsequences recursively using merge sort.</br>
+__Combine__ : Merge the two sorted subsequences to produce the sorted answer.</br>
