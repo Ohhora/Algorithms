@@ -14,7 +14,7 @@ I'm just beginner and right just a little pseudo-code, if you want more specific
 
 ## Insertion sort
 >
-`for j = 2 to A.length`
+>`for j = 2 to A.length`
     `key = A[j]`
      // Insert `A[j]` in to the sorted sequence `A[1...j-1]`
      `i = j-1`
