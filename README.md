@@ -42,8 +42,9 @@ __Combine__ : Merge the two sorted subsequences to produce the sorted answer.</b
 
 MERGE(A,p,q,r)
 ```
-n1 = q - p + 1
-n2 = r - q
+
+n1 = q - p + 1 # A[p,...,q] 
+n2 = r - q # A[q+1,...,r]
 let L[1 ... n1 + 1] and R[1 ... n2 + 1] be new arrays
 for i = 1 to n1
     L[i] = A[p+i-1]
@@ -61,4 +62,15 @@ for k = p to r
         j = j + 1
 ```
 
-__최대 부분 배열__
+We can now use the MERGE-SORT(A,p,r) sorts the elements in the subarray `A[p,...,r]`. If p>= r, the subarray has at most one elements and is therefore already sorted. Otherwise, the divide step simply computes an index q that partitions `A[p,...,r]` into two subarray: `A[p,...,q]`, containing `[n/2]` elements, and `A[q+1,...,r]`, containing `[n/2]` elements.
+```
+if p < r
+    q = (p+r)/2
+    MERGE-SORT(A,p,q)
+    MERGE-SORT(A, q+1, r)
+    MERGE(A,P,Q,r)
+```
+
+
+## The maximun-subarray problem(최대 부분 수열 문제)
+
