@@ -73,4 +73,21 @@ if p < r
 
 
 ## The maximun-subarray problem(최대 부분 수열 문제)
+### sudo-code
+FIND-MAX-CROSSING-SUBARRAY(A, low, mid, high)
+_left-sum_ = -inf
+sum = 0
+**for** _i_ = mid **downto** low
+    sum = sum + A[_i_]
+    **if** sum > _left-sum_
+        _left_sum_ = sum
+        _max-left_ = _i_
+_right-sum_ = -inf
+sum = 0
+**for** _j_ = mid + 1 **to** high
+    sum = sum + A[_j_]
+    **if** sum > _right-sum_
+        _right-sum_ = sum
+        _max-sum_ = _j_
+**return** (_max-left_, _max-right_, _left-sum_+_right-sum_
 
