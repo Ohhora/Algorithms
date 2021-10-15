@@ -76,19 +76,19 @@ if p < r
 ### sudo-code
 FIND-MAX-CROSSING-SUBARRAY(A, low, mid, high)
 ```
-_left-sum_ = -inf
+left-sum = -inf
 sum = 0
-**for** _i_ = mid **downto** low
+for i = mid downto low
     sum = sum + A[_i_]
-    **if** sum > _left-sum_
-        _left_sum_ = sum
-        _max-left_ = _i_
-_right-sum_ = -inf
+    if sum > left-sum
+        left_sum = sum
+        max-left = i
+right-sum = -inf
 sum = 0
-**for** _j_ = mid + 1 **to** high
-    sum = sum + A[_j_]
-    **if** sum > _right-sum_
-        _right-sum_ = sum
-        _max-sum_ = _j_
-**return** (_max-left_, _max-right_, _left-sum_+_right-sum_
+for j = mid + 1 to high
+    sum = sum + A[j]
+    if sum > right-sum
+        right-sum = sum
+        max-sum = j
+return (max-left, max-right,  left-sum + right-sum)
 ```
